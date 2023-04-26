@@ -53,3 +53,44 @@ gap: 93px;
     display: flex;
     gap: 50px;
 }
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.advantages-header {
+    display: none;
+}
+
+.advantages-list {
+    display: flex;
+    gap: 30px;
+}
+
+.specialization-header {
+    text-align: center;
+}
+
+.specialization-list {
+    display: flex;
+    gap: 30px;
+}
+
+.team-header {
+    text-align: center;
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+
+.team-list > li {
+text-align: center;
+}
+
+.page-footer {
+    padding-left: 215px;
+}
