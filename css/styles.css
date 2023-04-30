@@ -1,2 +1,280 @@
-/* font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif; */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #212121;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.header-background {
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.page-header {
+  justify-content: center;
+  align-items: center;
+  gap: 344px;
+  padding: 24px 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 93px;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.logo > span {
+  color: #2196f3;
+}
+
+.menu {
+  display: flex;
+  gap: 50px;
+}
+
+.menu a {
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.menu a:hover,
+.menu a:focus,
+.menu a:active {
+  color: #2196f3;
+}
+
+.header-contacts {
+  display: flex;
+  gap: 50px;
+}
+
+.header-contacts a {
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.header-contacts a:hover,
+.header-contacts a:focus,
+.header-contacts a:active {
+  color: #2196f3;
+}
+
+.order-background {
+  background-color: #2f303a;
+}
+
+.order-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 200px 0;
+}
+
+.order-header {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+
+.order-button {
+  width: 216px;
+  height: 50px;
+  padding: 0;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.order-button:active {
+  background: #188ce8;
+}
+
+.advantages-container {
+  flex-direction: column;
+  align-items: center;
+  padding: 94px 0;
+}
+
+.advantages-header {
+  display: none;
+}
+
+.advantages-list {
+  display: flex;
+  gap: 30px;
+}
+
+.advantages-list > li {
+  width: 270px;
+}
+
+.advantages-list h3 {
+  margin: 0 0 10px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantages-list p {
+  margin: 0;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.specialization-section {
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 94px;
+}
+
+.specialization-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.specialization-list {
+  display: flex;
+  gap: 30px;
+}
+
+.team-background {
+  background: #f5f4fa;
+}
+
+.team-section {
+  flex-direction: column;
+  align-items: center;
+  padding: 94px 0;
+  gap: 50px;
+}
+
+.team-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
+}
+
+.team-list > li {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.18;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list h3 {
+  padding-top: 30px;
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+
+.team-list p {
+  color: #757575;
+  margin: 0 0 30px;
+}
+
+.footer-background {
+  background-color: #2f303a;
+}
+
+.footer-logo {
+  margin: 0 0 20px;
+  color: #ffffff;
+}
+
+.page-footer {
+  flex-direction: column;
+  padding: 60px 0 60px 215px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.footer-list a {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-list a[href='mailto:info@devstudio.com'] {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list a[href='tel:+38096111111'] {
+  color: rgba(255, 255, 255, 0.6);
+}
