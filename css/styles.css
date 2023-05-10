@@ -27,6 +27,7 @@ img {
 
 .header-background {
   background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
 }
 
 .container {
@@ -128,7 +129,6 @@ img {
   border: none;
   border-radius: 4px;
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -136,8 +136,10 @@ img {
   color: #ffffff;
 }
 
-.order-button:active {
+.order-button:active,
+.order-button:hover {
   background: #188ce8;
+  cursor: pointer;
 }
 
 .advantages-container {
@@ -146,7 +148,16 @@ img {
   padding: 94px 0;
 }
 
-.advantages-header {
+.section-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.hidden {
   display: none;
 }
 
@@ -181,15 +192,6 @@ img {
   padding-bottom: 94px;
 }
 
-.specialization-header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin: 0;
-}
-
 .specialization-list {
   display: flex;
   gap: 30px;
@@ -206,15 +208,6 @@ img {
   gap: 50px;
 }
 
-.team-header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin: 0;
-}
-
 .team-list {
   display: flex;
   gap: 30px;
@@ -222,7 +215,6 @@ img {
 
 .team-list > li {
   text-align: center;
-  font-size: 16px;
   line-height: 1.18;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -233,12 +225,84 @@ img {
 .team-list h3 {
   padding-top: 30px;
   margin: 0 0 10px;
+  font-size: 16px;
   font-weight: 500;
 }
 
 .team-list p {
   color: #757575;
   margin: 0 0 30px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.projects-background {
+  padding: 94px 0;
+  background: #ffffff;
+}
+
+.projects-container {
+  display: flex;
+  width: 1170px;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+  margin: 0 auto;
+}
+
+.projects-filter-list {
+  display: flex;
+  gap: 8px;
+}
+
+.projects-filter-list button {
+  padding: 6px 22px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  background: #f5f4fa;
+  border-width: 0;
+  border-radius: 4px;
+  color: #212121;
+}
+
+.projects-filter-list button:active,
+.projects-filter-list button:hover {
+  cursor: pointer;
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: #ffffff;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.projects-list img {
+  margin-bottom: 20px;
+}
+
+.projects-list h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  padding: 0 24px;
+  margin: 0 0 4px;
+}
+
+.projects-list p {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
+  padding: 0 24px;
+  margin: 0;
 }
 
 .footer-background {
