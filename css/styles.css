@@ -237,14 +237,17 @@ img {
 }
 
 .projects-background {
+  padding: 94px 0;
   background: #ffffff;
 }
 
 .projects-container {
+  display: flex;
+  width: 1170px;
   flex-direction: column;
   align-items: center;
   gap: 34px;
-  padding: 94px 0;
+  margin: 0 auto;
 }
 
 .projects-filter-list {
@@ -272,6 +275,34 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: #ffffff;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.projects-list img {
+  margin-bottom: 20px;
+}
+
+.projects-list h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  padding: 0 24px;
+  margin: 0 0 4px;
+}
+
+.projects-list p {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
+  padding: 0 24px;
+  margin: 0;
 }
 
 .footer-background {
