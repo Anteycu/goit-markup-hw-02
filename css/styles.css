@@ -1,3 +1,5 @@
+/* Ultimate */
+
 *,
 *::before,
 *::after {
@@ -6,9 +8,9 @@
 
 body {
   margin: 0;
+  color: #212121;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  color: #212121;
 }
 
 ul {
@@ -86,6 +88,7 @@ img {
 }
 
 .header-contacts a {
+  display: inline-flex;
   font-weight: 500;
   line-height: 1.15;
   letter-spacing: 0.02em;
@@ -96,6 +99,22 @@ img {
 .header-contacts a:focus,
 .header-contacts a:active {
   color: #2196f3;
+}
+
+.envelope::before {
+  content: ' ';
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  background-image: url('../images/envelope.svg');
+}
+
+.mobile::before {
+  content: ' ';
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  background-image: url('../images/smartphone.svg');
 }
 
 .order-background {
