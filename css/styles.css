@@ -17,6 +17,7 @@
   --accent-bg-color: #2f303a;
   --header-border-color: #ececec;
   --project-border-color: #eee;
+  --main-icon-color: #afb1b8;
 }
 
 /* Ultimate styles*/
@@ -189,10 +190,23 @@ img {
 /* Hero */
 
 .hero {
+  max-width: 1600px;
+  min-height: 600px;
   padding: 200px 0;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 
   background-color: var(--accent-bg-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -242,6 +256,34 @@ img {
 
 .features-item {
   width: calc((100% - 3 * 30px) / 4);
+}
+
+.features-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background: var(--primary-bg-color);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.astronaut::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .feature-title {
@@ -323,10 +365,47 @@ img {
 }
 
 .worker-description {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
 
   font-weight: 400;
   line-height: 1.19;
+}
+
+.worker-socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.worker-social {
+  display: flex;
+  min-width: 44px;
+  min-height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* .worker-link {
+  min-width: 44px;
+  min-height: 44px;
+} */
+
+/* Clients */
+
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.client {
+  padding: 15px 31px;
+  border-radius: 4px;
+  border: 1px solid var(--main-icon-color);
 }
 
 /* Footer */
@@ -337,11 +416,20 @@ img {
   background-color: var(--accent-bg-color);
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
 
   color: var(--primary-white-color);
+}
+
+.address-wrapper {
+  margin-right: 70px;
 }
 
 .address-item:not(:last-child) {
@@ -359,6 +447,60 @@ img {
 .address-link[href='mailto:info@devstudio.com'],
 .address-link[href='tel:+38096111111'] {
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* Social */
+
+.social-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-link {
+  display: inline-flex;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-link:hover {
+  background-color: var(--accent-color);
+}
+
+.social-link::before {
+  content: '';
+  min-width: 20px;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.instagram::before {
+  background-image: url(../images/instagram.svg);
+}
+
+.facebook::before {
+  background-image: url(../images/facebook.svg);
+}
+
+.twitter::before {
+  background-image: url(../images/twitter.svg);
+}
+
+.linkedin::before {
+  background-image: url(../images/linkedin.svg);
 }
 
 /* Portfolio */
