@@ -477,6 +477,35 @@
     <div class="modal-backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close></button>
+        <form class="order-form">
+          <b class="stimulus">Залиште свої дані, ми вам передзвонимо</b>
+          <ul class="user-contacts list">
+            <li class="user-contact">
+              <label for="name">Ім'я</label
+              ><input type="name" name="user-name" id="name" />
+            </li>
+            <li class="user-contact">
+              <label for="tel">Телефон</label
+              ><input type="tel" name="user-tel" id="tel" />
+            </li>
+            <li class="user-contact">
+              <label for="mail">Пошта</label
+              ><input type="email" name="user-email" id="mail" />
+            </li>
+          </ul>
+          <div class="order-comment">
+            <label for="comment">Коментар</label>
+            <textarea type="text" name="user-comment" id="comment"></textarea>
+          </div>
+          <div class="order-conditions">
+            <input type="checkbox" name="conditions" id="conditions" />
+            <label for="conditions"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="conditions-link link">Умови договору</a></label
+            >
+          </div>
+          <button type="submit" class="btn primary-button">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
