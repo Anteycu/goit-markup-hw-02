@@ -575,15 +575,11 @@ img {
   padding-right: 28px;
 }
 
-.form-button::after {
-  content: '';
+.icon-send {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  background-image: url(../images/icon-send.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  fill: currentColor;
 }
 
 /* Portfolio */
@@ -759,6 +755,9 @@ img {
   top: 8px;
   right: 8px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
   padding: 0;
@@ -766,10 +765,17 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   background-color: var(--primary-white-color);
-  background-image: url(../images/close-black-18dp.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
+}
+
+.modal-button:hover .icon-close {
+  fill: var(--accent-color);
+}
+
+.icon-close {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 }
 
 /* Order form */
@@ -786,18 +792,20 @@ img {
   text-transform: none;
 }
 
-.order-form label {
+.label {
   margin-bottom: 4px;
   color: var(--main-text-color);
   font-size: 12px;
   letter-spacing: 0.12px;
 }
 
-.order-form input,
+.order-form .contact-input,
 .order-form textarea {
-  padding: 11px 12px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+
+  font-size: 14px;
+  color: var(--secondary-text-color);
 }
 
 .user-contacts {
@@ -805,12 +813,48 @@ img {
 }
 
 .user-contact {
+  position: relative;
+
   display: flex;
   flex-direction: column;
+
+  color: var(--secondary-text-color);
 }
 
 .user-contact:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.user-contact .icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.contact-input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 11px;
+  padding-left: 41px;
+}
+
+.contact-input:hover,
+.contact-input:focus,
+.order-comment textarea:hover,
+.order-comment textarea:focus {
+  /* outline: none; */
+  border-color: var(--accent-color);
+
+  cursor: pointer;
+}
+
+.contact-input:hover + .icon,
+.contact-input:focus + .icon {
+  fill: var(--accent-color);
 }
 
 .order-comment {
@@ -821,8 +865,7 @@ img {
 
 .order-comment textarea {
   width: 448px;
-  min-height: 120px;
-  padding: 12px 16px;
+  padding: 11px 15px;
   resize: none;
 }
 
@@ -833,27 +876,48 @@ img {
   letter-spacing: 0.12px;
 }
 
-.order-conditions {
-  display: flex;
-  align-items: center;
+.checkbox-field {
   margin-bottom: 30px;
 }
 
-.order-conditions input {
-  width: 16px;
-  height: 15px;
-}
-
-.order-conditions label {
-  margin-left: 9px;
-  margin-bottom: 0;
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.42px;
 }
 
-.conditions-link {
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-icon {
+  width: 16px;
+  height: 15px;
+  margin-right: 9px;
+  border: 2px solid var(--secondary-text-color);
+  border-radius: 2px;
+  fill: var(--primary-white-color);
+}
+
+.checkbox:checked + .checkbox-icon {
+  fill: var(--accent-color);
+  border: none;
+}
+
+.checkbox-link {
+  margin-left: 4px;
+
   color: var(--accent-color);
   text-decoration: underline var(--accent-color);
 }
