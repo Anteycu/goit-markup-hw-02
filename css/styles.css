@@ -538,18 +538,13 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* Form */
+/* Subscription-form */
 
-/* .form {
-  display: flex;
-  flex-direction: column;
-} */
-
-.form .inner-wrapper {
+.subscription-form .inner-wrapper {
   display: flex;
 }
 
-.input {
+.subscription-input {
   min-width: 358px;
   padding: 15px 16px;
   margin-right: 12px;
@@ -562,13 +557,13 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.input::placeholder {
+.subscription-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
   line-height: 20px;
   letter-spacing: 0.48px;
 }
 
-.form-button {
+.subscription-button {
   display: inline-flex;
   align-items: center;
   padding-left: 28px;
@@ -793,14 +788,58 @@ img {
 }
 
 .label {
-  margin-bottom: 4px;
   color: var(--main-text-color);
   font-size: 12px;
   letter-spacing: 0.12px;
 }
 
-.order-form .contact-input,
-.order-form textarea {
+/* Customer-group */
+
+.customer-group {
+  margin-bottom: 10px;
+}
+
+.customer-field:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.customer-label {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-label:hover .customer-input,
+.customer-label:focus .customer-input,
+.comment:hover,
+.comment:focus {
+  /* outline: none; */
+  border-color: var(--accent-color);
+
+  cursor: pointer;
+}
+
+.customer-label .icon {
+  position: absolute;
+  top: calc(50% + 9px);
+  left: 12px;
+
+  width: 18px;
+  height: 18px;
+
+  transform: translateY(-50%);
+  fill: var(--secondary-text-color);
+}
+
+.customer-label:hover .icon,
+.customer-label:focus .icon {
+  fill: var(--accent-color);
+  cursor: pointer;
+}
+
+.customer-input,
+.comment {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 
@@ -808,79 +847,47 @@ img {
   color: var(--secondary-text-color);
 }
 
-.user-contacts {
-  margin-bottom: 10px;
-}
-
-.user-contact {
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-
-  color: var(--secondary-text-color);
-}
-
-.user-contact:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.user-contact .icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
-}
-
-.contact-input {
+.customer-input {
+  margin-top: 4px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 11px;
   padding-left: 41px;
 }
 
-.contact-input:hover,
-.contact-input:focus,
-.order-comment textarea:hover,
-.order-comment textarea:focus {
-  /* outline: none; */
-  border-color: var(--accent-color);
+/* Comment-field */
 
-  cursor: pointer;
-}
-
-.contact-input:hover + .icon,
-.contact-input:focus + .icon {
-  fill: var(--accent-color);
-}
-
-.order-comment {
+.comment-field {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
-.order-comment textarea {
+/* margin bottom create blind gap between input and label if they bind by for */
+.comment-label {
+  margin-bottom: 4px;
+}
+
+.comment {
   width: 448px;
   padding: 11px 15px;
   resize: none;
 }
 
-.order-comment textarea::placeholder {
+.comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   line-height: normal;
   letter-spacing: 0.12px;
 }
 
-.checkbox-field {
+/* Checkbox-group */
+
+.checkbox-group {
   margin-bottom: 30px;
 }
 
-.checkbox-label {
+.checkbox-field {
   display: flex;
   align-items: center;
   justify-content: center;

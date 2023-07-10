@@ -458,16 +458,19 @@
             </li>
           </ul>
         </div>
-        <form class="form">
+        <form class="subscription-form">
           <b class="stimulus">Підпишіться на розсилку</b>
           <div class="inner-wrapper">
             <input
               type="email"
               name="email"
               placeholder="E-mail"
-              class="input"
+              class="subscription-input"
             />
-            <button type="submit" class="btn primary-button form-button">
+            <button
+              type="submit"
+              class="btn primary-button subscription-button"
+            >
               Підписатися
               <svg class="icon-send">
                 <use href="./images/icons-min.svg#icon-send"></use>
@@ -486,55 +489,68 @@
         </button>
         <form class="order-form" autocomplete="on">
           <b class="stimulus">Залиште свої дані, ми вам передзвонимо</b>
-          <ul class="user-contacts list">
-            <li class="user-contact">
-              <label for="name" class="label">Ім'я</label
-              ><input
-                type="text"
-                name="user-name"
-                id="name"
-                class="contact-input"
-              />
-              <svg class="icon">
-                <use href="./images/icons-min.svg#icon-person-black-18dp"></use>
-              </svg>
+          <ul class="customer-group list">
+            <li class="customer-field">
+              <label for="name" class="label customer-label"
+                >Ім'я
+                <input
+                  type="text"
+                  name="user-name"
+                  id="name"
+                  class="customer-input"
+                />
+                <svg class="icon">
+                  <use
+                    href="./images/icons-min.svg#icon-person-black-18dp"
+                  ></use>
+                </svg>
+              </label>
             </li>
-            <li class="user-contact">
-              <label for="tel" class="label">Телефон</label
-              ><input
-                type="tel"
-                name="user-tel"
-                id="tel"
-                class="contact-input"
-              />
-              <svg class="icon">
-                <use href="./images/icons-min.svg#icon-phone-black-18dp"></use>
-              </svg>
+            <li class="customer-field">
+              <label for="tel" class="label customer-label"
+                >Телефон
+                <input
+                  type="tel"
+                  name="user-tel"
+                  id="tel"
+                  class="customer-input"
+                />
+                <svg class="icon">
+                  <use
+                    href="./images/icons-min.svg#icon-phone-black-18dp"
+                  ></use>
+                </svg>
+              </label>
             </li>
-            <li class="user-contact">
-              <label for="mail" class="label">Пошта</label
-              ><input
-                type="email"
-                name="user-email"
-                id="mail"
-                class="contact-input"
-              />
-              <svg class="icon">
-                <use href="./images/icons-min.svg#icon-email-black-18dp"></use>
-              </svg>
+            <li class="customer-field">
+              <label for="mail" class="label customer-label"
+                >Пошта
+                <input
+                  type="email"
+                  name="user-email"
+                  id="mail"
+                  class="customer-input"
+                />
+                <svg class="icon">
+                  <use
+                    href="./images/icons-min.svg#icon-email-black-18dp"
+                  ></use>
+                </svg>
+              </label>
             </li>
           </ul>
-          <div class="order-comment">
-            <label for="comment" class="label">Коментар</label>
+          <div class="comment-field">
+            <label for="comment" class="label comment-label">Коментар</label>
             <textarea
               name="user-comment"
-              rows="5"
+              rows="6"
               id="comment"
               placeholder="Введіть текст"
+              class="comment"
             ></textarea>
           </div>
-          <div class="checkbox-field">
-            <label class="checkbox-label">
+          <div class="checkbox-group">
+            <label class="checkbox-field">
               <input type="checkbox" name="conditions" class="checkbox" />
               <svg class="checkbox-icon">
                 <use href="./images/icons-min.svg#icon-check"></use>
