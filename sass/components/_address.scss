@@ -1,0 +1,17 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.address__link {
+  color: var(--primary-white-color);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  &--grey {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

@@ -1,0 +1,31 @@
+.footer {
+  padding: 60px 0;
+
+  background-color: var(--accent-bg-color);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-right: 0;
+    margin-bottom: 20px;
+
+    color: var(--primary-white-color);
+  }
+
+  &__stimulus {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: var(--primary-white-color);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+}

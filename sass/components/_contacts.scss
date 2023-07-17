@@ -1,0 +1,9 @@
+.contacts {
+  display: flex;
+  margin-left: auto;
+
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}

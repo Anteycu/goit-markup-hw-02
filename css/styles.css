@@ -34,8 +34,7 @@ body {
 
 img {
   display: block;
-  /* width: 100%;
-  height: auto; */
+  width: 100%;
 }
 
 .list {
@@ -438,7 +437,7 @@ img {
   background-color: var(--accent-color);
 }
 
-.social-link--black-bg {
+.socials__link--black-bg {
   color: var(--primary-white-color);
   background-color: rgba(255, 255, 255, 0.1);
 }

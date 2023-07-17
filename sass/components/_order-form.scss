@@ -1,0 +1,60 @@
+.order-form {
+  padding: 40px;
+
+  &__stimulus {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    color: var(--secondary-text-color);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+  }
+
+  &__group {
+    margin-bottom: 10px;
+  }
+
+  &__field:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &__label {
+    @extend %label;
+    position: relative;
+  }
+  &__input {
+    @extend %input;
+    margin-top: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 11px;
+    padding-left: 41px;
+  }
+
+  &__btn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.order-form__icon {
+  position: absolute;
+  top: calc(50% + 9px);
+  left: 12px;
+
+  width: 18px;
+  height: 18px;
+
+  transform: translateY(-50%);
+  fill: var(--secondary-text-color);
+
+  .order-form__label:hover &,
+  .order-form__label:focus & {
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
+}
