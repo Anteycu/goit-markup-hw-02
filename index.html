@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./dist/css/main.min.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -139,7 +139,7 @@
                 src="./images/img_1.jpg"
                 alt="Робочій стіл з папірцями, моніторами та ремоут клавітура за якою працюють."
               />
-              <p class="activity__description">Десктопні додатки</p>
+              <p class="activities__description">Десктопні додатки</p>
             </li>
             <li class="activities__item">
               <img
@@ -148,7 +148,7 @@
                 src="./images/img_2.jpg"
                 alt="Людина працює за ноутбуком, з телефоном у руці."
               />
-              <p class="activity__description">Мобільні додатки</p>
+              <p class="activities__description">Мобільні додатки</p>
             </li>
             <li class="activities__item">
               <img
@@ -157,7 +157,7 @@
                 src="./images/img_3.jpg"
                 alt="Планшет у руках, з палітрою на екрані."
               />
-              <p class="activity__description">Дизайнерські рішення</p>
+              <p class="activities__description">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -431,7 +431,7 @@
             <li class="socials__item">
               <a
                 href=""
-                class="socials__link social-link--black-bg link"
+                class="socials__link socials__link--black-bg link"
                 aria-label="instagram"
                 ><span class="visually-hidden">Instagram</span
                 ><svg class="socials__icon">
@@ -442,7 +442,7 @@
             <li class="socials__item">
               <a
                 href=""
-                class="socials__link social-link--black-bg link"
+                class="socials__link socials__link--black-bg link"
                 aria-label="twitter"
                 ><span class="visually-hidden">Twitter</span
                 ><svg class="socials__icon">
@@ -453,7 +453,7 @@
             <li class="socials__item">
               <a
                 href=""
-                class="socials__link social-link--black-bg link"
+                class="socials__link socials__link--black-bg link"
                 aria-label="facebook"
                 ><span class="visually-hidden">Instagram</span
                 ><svg class="socials__icon">
@@ -464,7 +464,7 @@
             <li class="socials__item">
               <a
                 href=""
-                class="socials__link social-link--black-bg link"
+                class="socials__link socials__link--black-bg link"
                 aria-label="linkedin"
                 ><span class="visually-hidden">Instagram</span
                 ><svg class="socials__icon">
@@ -504,53 +504,49 @@
           <b class="order-form__stimulus"
             >Залиште свої дані, ми вам передзвонимо</b
           >
-          <ul class="customer-group list">
-            <li class="customer-group__field">
-              <label
-                for="name"
-                class="order-form__label customer-group__wrapper"
+          <ul class="order-form__group list">
+            <li class="order-form__field">
+              <label for="name" class="order-form__label"
                 >Ім'я
                 <input
                   type="text"
                   name="user-name"
                   id="name"
-                  class="customer-group__input order-form__input"
+                  class="order-form__input"
                 />
-                <svg class="customer-group__icon">
+                <svg class="order-form__icon">
                   <use
                     href="./images/icons-min.svg#icon-person-black-18dp"
                   ></use>
                 </svg>
               </label>
             </li>
-            <li class="customer-group__field">
-              <label for="tel" class="order-form__label customer-group__wrapper"
+            <li class="order-form__field">
+              <label for="tel" class="order-form__label"
                 >Телефон
                 <input
                   type="tel"
                   name="user-tel"
                   id="tel"
-                  class="customer-group__input order-form__input"
+                  class="order-form__input"
                 />
-                <svg class="customer-group__icon">
+                <svg class="order-form__icon">
                   <use
                     href="./images/icons-min.svg#icon-phone-black-18dp"
                   ></use>
                 </svg>
               </label>
             </li>
-            <li class="customer-group__field">
-              <label
-                for="mail"
-                class="order-form__label customer-group__wrapper"
+            <li class="order-form__field">
+              <label for="mail" class="order-form__label"
                 >Пошта
                 <input
                   type="email"
                   name="user-email"
                   id="mail"
-                  class="customer-group__input order-form__input"
+                  class="order-form__input"
                 />
-                <svg class="customer-group__icon">
+                <svg class="order-form__icon">
                   <use
                     href="./images/icons-min.svg#icon-email-black-18dp"
                   ></use>

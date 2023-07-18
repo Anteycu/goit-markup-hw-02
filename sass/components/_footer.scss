@@ -1,0 +1,31 @@
+.footer {
+  padding: 60px 0;
+
+  background-color: $bg-color-secondary;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-right: 0;
+    margin-bottom: 20px;
+
+    color: $white-primary;
+  }
+
+  &__stimulus {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: $white-primary;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+}
