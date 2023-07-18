@@ -15,7 +15,7 @@
     margin-bottom: 30px;
     border-radius: 4px;
 
-    background: var(--primary-bg-color);
+    background: $bg-color;
   }
 
   &__icon {
@@ -27,7 +27,7 @@
     margin-top: 0;
     margin-bottom: 10px;
 
-    color: var(--secondary-text-color);
+    color: $text-color-secondary;
 
     font-weight: 700;
     font-size: 14px;

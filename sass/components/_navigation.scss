@@ -19,11 +19,11 @@
     display: flex;
     flex-wrap: wrap;
 
-    color: var(--secondary-text-color);
+    color: $text-color-secondary;
   }
 
   &__link:active::after {
-    content: '';
+    content: ' ';
     position: absolute;
     top: calc(100% - 3px);
     left: 0;
@@ -31,6 +31,6 @@
     width: 100%;
     height: 4px;
 
-    background: var(--accent-color);
+    background: $accent-color;
   }
 }

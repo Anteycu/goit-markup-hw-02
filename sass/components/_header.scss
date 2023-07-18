@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--primary-white-color);
+  background-color: $white-primary;
 
   &__wrapper {
     display: flex;
@@ -17,15 +17,15 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    transition: color 250ms var(--time-function);
+    transition: color 250ms $time-function;
   }
 
   &__link--grey {
-    color: var(--main-text-color);
+    color: $text-color;
   }
 
   &__link:hover,
   &__link:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }

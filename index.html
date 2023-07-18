@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./dist/css/main.min.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -139,7 +139,7 @@
                 src="./images/img_1.jpg"
                 alt="Робочій стіл з папірцями, моніторами та ремоут клавітура за якою працюють."
               />
-              <p class="activity__description">Десктопні додатки</p>
+              <p class="activities__description">Десктопні додатки</p>
             </li>
             <li class="activities__item">
               <img
@@ -148,7 +148,7 @@
                 src="./images/img_2.jpg"
                 alt="Людина працює за ноутбуком, з телефоном у руці."
               />
-              <p class="activity__description">Мобільні додатки</p>
+              <p class="activities__description">Мобільні додатки</p>
             </li>
             <li class="activities__item">
               <img
@@ -157,7 +157,7 @@
                 src="./images/img_3.jpg"
                 alt="Планшет у руках, з палітрою на екрані."
               />
-              <p class="activity__description">Дизайнерські рішення</p>
+              <p class="activities__description">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -506,15 +506,13 @@
           >
           <ul class="order-form__group list">
             <li class="order-form__field">
-              <label
-                for="name"
-                class="order-form__label customer-group__wrapper"
+              <label for="name" class="order-form__label"
                 >Ім'я
                 <input
                   type="text"
                   name="user-name"
                   id="name"
-                  class="customer-group__input order-form__input"
+                  class="order-form__input"
                 />
                 <svg class="order-form__icon">
                   <use
@@ -524,13 +522,13 @@
               </label>
             </li>
             <li class="order-form__field">
-              <label for="tel" class="order-form__label customer-group__wrapper"
+              <label for="tel" class="order-form__label"
                 >Телефон
                 <input
                   type="tel"
                   name="user-tel"
                   id="tel"
-                  class="customer-group__input order-form__input"
+                  class="order-form__input"
                 />
                 <svg class="order-form__icon">
                   <use
@@ -540,15 +538,13 @@
               </label>
             </li>
             <li class="order-form__field">
-              <label
-                for="mail"
-                class="order-form__label customer-group__wrapper"
+              <label for="mail" class="order-form__label"
                 >Пошта
                 <input
                   type="email"
                   name="user-email"
                   id="mail"
-                  class="customer-group__input order-form__input"
+                  class="order-form__input"
                 />
                 <svg class="order-form__icon">
                   <use

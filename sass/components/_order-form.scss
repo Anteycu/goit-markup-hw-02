@@ -6,7 +6,7 @@
     margin-top: 0;
     margin-bottom: 12px;
 
-    color: var(--secondary-text-color);
+    color: $text-color-secondary;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -50,11 +50,11 @@
   height: 18px;
 
   transform: translateY(-50%);
-  fill: var(--secondary-text-color);
+  fill: $text-color-secondary;
 
   .order-form__label:hover &,
   .order-form__label:focus & {
-    fill: var(--accent-color);
+    fill: $accent-color;
     cursor: pointer;
   }
 }

@@ -10,8 +10,7 @@
   background: rgba(0, 0, 0, 0.2);
   visibility: visible;
   opacity: 1;
-  transition: opacity 250ms var(--time-function),
-    visibility 250ms var(--time-function);
+  transition: opacity 250ms $time-function, visibility 250ms $time-function;
 
   &--is-hidden {
     visibility: hidden;

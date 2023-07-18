@@ -918,9 +918,3 @@ img {
   color: var(--accent-color);
   text-decoration: underline var(--accent-color);
 }
-
-.order-form__btn {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}

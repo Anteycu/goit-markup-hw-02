@@ -1,27 +1,27 @@
 .section {
   padding: 94px 0;
 
-  background-color: var(--primary-white-color);
+  background-color: $white-primary;
 
   &--no-bottom-padding {
     padding-bottom: 0;
   }
 
   &--primary-bg-color {
-    background: var(--primary-bg-color);
+    background: $bg-color;
   }
 
   &--bg-color {
-    border-top: 1px solid var(--header-border-color);
+    border-top: 1px solid $border-color-secondary;
 
-    background: var(--primary-white-color);
+    background: $white-primary;
   }
 
   &__title {
     margin-top: 0;
     margin-bottom: 50px;
 
-    color: var(--secondary-text-color);
+    color: $text-color-secondary;
 
     font-weight: 700;
     font-size: 36px;
