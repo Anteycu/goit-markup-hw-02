@@ -63,7 +63,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для<br />вашого бізнесу</h1>
-          <button class="btn hero-btn" type="button">Замовити послугу</button>
+          <button class="btn hero-btn" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="section no-bottom-padding">
@@ -131,6 +133,7 @@
                 src="./images/img_1.jpg"
                 alt="Робочій стіл з папірцями, моніторами та ремоут клавітура за якою працюють."
               />
+              <p class="activity-description">Десктопні додатки</p>
             </li>
             <li class="activity">
               <img
@@ -139,6 +142,7 @@
                 src="./images/img_2.jpg"
                 alt="Людина працює за ноутбуком, з телефоном у руці."
               />
+              <p class="activity-description">Мобільні додатки</p>
             </li>
             <li class="activity">
               <img
@@ -147,6 +151,7 @@
                 src="./images/img_3.jpg"
                 alt="Планшет у руках, з палітрою на екрані."
               />
+              <p class="activity-description">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -455,5 +460,11 @@
         </section>
       </div>
     </footer>
+    <div class="modal-backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" type="button" data-modal-close></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
