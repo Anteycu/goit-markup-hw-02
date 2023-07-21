@@ -1,6 +1,7 @@
 .clients {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 
   &__icon {
@@ -11,8 +12,11 @@
 }
 
 .clients__link {
-  display: inline-block;
-  padding: 15px 51px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
   border-radius: 4px;
   border: 1px solid $icon-color;
 

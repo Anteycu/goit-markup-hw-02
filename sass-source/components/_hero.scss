@@ -1,12 +1,11 @@
 .hero {
-  min-height: 400px;
-  max-width: 480px;
-  border-top: 1px solid $border-color-secondary;
+  max-width: 1600px;
+  min-height: 600px;
+  padding: 200px 0;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 118px;
-
   text-align: center;
+  border-top: 1px solid $border-color-secondary;
 
   background-color: $bg-color-secondary;
   background-image: linear-gradient(
@@ -26,9 +25,10 @@
     color: $white-primary;
 
     font-weight: 900;
-    font-size: 26px;
-    line-height: 1.61;
-    letter-spacing: 1.56px;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
   }
 }

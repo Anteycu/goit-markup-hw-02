@@ -4,15 +4,13 @@
   background-color: $bg-color-secondary;
 
   &__container {
-    text-align: center;
-  }
-
-  &__inner-wrapper {
-    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
   &__logo {
-    display: block;
+    display: inline-block;
     margin-right: 0;
     margin-bottom: 20px;
 
@@ -25,8 +23,9 @@
     margin-bottom: 20px;
 
     color: $white-primary;
+    font-size: 14px;
     font-weight: 700;
-    line-height: normal;
+    letter-spacing: 0.42px;
     text-transform: uppercase;
   }
 }

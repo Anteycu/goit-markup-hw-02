@@ -1,29 +1,30 @@
 .sub-form {
+  &__inner-wrapper {
+    display: flex;
+  }
+
   &__btn {
     display: inline-flex;
     align-items: center;
-    padding-left: 31px;
+    padding-left: 28px;
     padding-right: 28px;
   }
 
   &__icon {
     width: 24px;
     height: 24px;
-    margin-left: 12px;
+    margin-left: 10px;
     fill: currentColor;
   }
 }
 
 .sub-form__input {
-  width: 100%;
-  padding: 14px 15px;
-  margin-bottom: 20px;
+  min-width: 358px;
+  padding: 15px 16px;
+  margin-right: 12px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
 
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.48px;
   color: $white-primary;
 
   background: rgba(33, 150, 243, 0);
@@ -31,5 +32,7 @@
 
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
+    line-height: 20px;
+    letter-spacing: 0.48px;
   }
 }
