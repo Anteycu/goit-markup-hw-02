@@ -1,0 +1,13 @@
+.filters {
+  margin-bottom: 40px;
+
+  &__item {
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-right: 4px;
+  }
+
+  &__item:nth-child(n + 4) {
+    margin-bottom: 0;
+  }
+}

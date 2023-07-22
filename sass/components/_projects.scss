@@ -1,0 +1,70 @@
+.projects {
+  &__thumb {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__text-wrapper {
+    padding-top: 20px;
+    padding-bottom: 19px;
+    padding-left: 23px;
+    padding-right: 23px;
+    border: 1px solid $border-color;
+    border-top: none;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    margin-top: 0;
+
+    color: $text-color-secondary;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 1.08px;
+  }
+
+  &__description {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.48px;
+  }
+}
+
+.projects__item {
+  margin-bottom: 30px;
+  transition: box-shadow 250ms $time-function;
+
+  &:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.projects__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 77px 24px;
+
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: 0.54px;
+  color: $white-primary;
+
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms $time-function;
+
+  .projects__item:hover & {
+    transform: translateY(0);
+  }
+}
