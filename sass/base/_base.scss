@@ -38,4 +38,8 @@ img {
   width: 480px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 }
