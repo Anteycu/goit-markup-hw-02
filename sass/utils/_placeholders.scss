@@ -1,3 +1,15 @@
+%link {
+  display: inline-flex;
+
+  text-decoration: none;
+  transition: color 250ms $time-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
 %btn {
   display: inline-block;
   border: none;

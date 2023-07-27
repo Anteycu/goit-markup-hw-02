@@ -4,15 +4,26 @@
   background-color: $bg-color-secondary;
 
   &__container {
-    text-align: center;
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: baseline;
+    }
   }
 
-  &__inner-wrapper {
-    margin-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    &__inner-wrapper {
+      margin-bottom: 60px;
+    }
   }
 
   &__logo {
-    display: block;
+    @extend %link;
     margin-right: 0;
     margin-bottom: 20px;
 

@@ -19,10 +19,6 @@ img {
   list-style: none;
 }
 
-.link {
-  text-decoration: none;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -41,5 +37,9 @@ img {
 
   @media screen and (min-width: 768px) {
     width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }

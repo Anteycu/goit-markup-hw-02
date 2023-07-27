@@ -4,9 +4,6 @@
   &__wrapper {
     display: flex;
     align-items: center;
-    // delete?
-    padding-top: 10px;
-    padding-bottom: 10px;
 
     @media screen and (max-width: 767px) {
       justify-content: space-between;
@@ -30,28 +27,23 @@
     @media screen and (max-width: 767px) {
       display: none;
     }
+
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__link {
-    display: inline-flex;
+    @extend %link;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
-    transition: color 250ms $time-function;
   }
 
   &__link--grey {
     color: $text-color;
-  }
-
-  &__link:hover,
-  &__link:focus {
-    color: $accent-color;
   }
 }

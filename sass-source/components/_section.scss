@@ -3,8 +3,8 @@
 
   background-color: $white-primary;
 
-  &--no-bottom-padding {
-    padding-bottom: 0;
+  &--no-top-padding {
+    padding-top: 0;
   }
 
   &--primary-bg-color {
@@ -13,8 +13,6 @@
 
   &--bg-color {
     border-top: 1px solid $border-color-secondary;
-
-    background: $white-primary;
   }
 
   &__title {

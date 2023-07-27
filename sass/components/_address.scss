@@ -4,9 +4,19 @@
   gap: 8px;
 
   font-style: normal;
+
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 9px;
+  }
 }
 
 .address__link {
+  @extend %link;
+
   color: $white-primary;
 
   &--grey {

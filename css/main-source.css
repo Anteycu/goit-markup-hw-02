@@ -74,15 +74,14 @@ img {
   padding: 94px 0;
   background-color: #ffffff;
 }
-.section--no-bottom-padding {
-  padding-bottom: 0;
+.section--no-top-padding {
+  padding-top: 0;
 }
 .section--primary-bg-color {
   background: #f5f4fa;
 }
 .section--bg-color {
   border-top: 1px solid #ececec;
-  background: #ffffff;
 }
 .section__title {
   margin-top: 0;

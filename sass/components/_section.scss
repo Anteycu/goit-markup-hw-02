@@ -3,6 +3,14 @@
 
   background-color: $white-primary;
 
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+
+  &--no-top-padding {
+    padding-top: 0;
+  }
+
   &--primary-bg-color {
     background: $bg-color;
   }
@@ -22,6 +30,14 @@
     line-height: normal;
     text-align: center;
     letter-spacing: 0.84px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+
+      font-size: 36px;
+      line-height: 1.16;
+      letter-spacing: 1.08px;
+    }
   }
 
   @media screen and (max-width: 1199px) {

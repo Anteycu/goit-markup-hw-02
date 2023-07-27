@@ -20,6 +20,14 @@
 
   transition: color 250ms $time-function, border 250ms $time-function;
 
+  @media screen and (min-width: 768px) {
+    padding: 15px 59px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 15px 31px;
+  }
+
   &:hover,
   &:focus {
     border: 1px solid $accent-color;

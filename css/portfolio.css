@@ -1,3 +1,12 @@
+.address__link, .footer__logo, .logo, .header__link {
+  display: inline-flex;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address__link:hover, .footer__logo:hover, .logo:hover, .header__link:hover, .address__link:focus, .footer__logo:focus, .logo:focus, .header__link:focus {
+  color: #2196f3;
+}
+
 .btn--secondary, .btn--primary {
   display: inline-block;
   border: none;
@@ -29,10 +38,6 @@ img {
   list-style: none;
 }
 
-.link {
-  text-decoration: none;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -54,6 +59,11 @@ img {
     width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .header {
   background-color: #ffffff;
@@ -61,8 +71,6 @@ img {
 .header__wrapper {
   display: flex;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 @media screen and (max-width: 767px) {
   .header__wrapper {
@@ -80,27 +88,26 @@ img {
     display: none;
   }
 }
+.header__inner-wrapper {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
 @media screen and (max-width: 767px) {
   .header__inner-wrapper {
     display: none;
   }
 }
 .header__link {
-  display: inline-flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__link--grey {
   color: #757575;
-}
-.header__link:hover, .header__link:focus {
-  color: #2196f3;
 }
 
 .logo {
@@ -110,6 +117,16 @@ img {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.72px;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 .logo__text {
   color: #2196f3;
@@ -150,6 +167,14 @@ img {
   padding: 60px 0;
   background-color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
+.section--no-top-padding {
+  padding-top: 0;
+}
 .section--primary-bg-color {
   background: #f5f4fa;
 }
@@ -165,6 +190,14 @@ img {
   line-height: normal;
   text-align: center;
   letter-spacing: 0.84px;
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 1.08px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .section--hidden {
@@ -245,14 +278,25 @@ img {
   padding: 60px 0;
   background-color: #2f303a;
 }
-.footer__container {
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .footer__container {
+    text-align: center;
+  }
 }
-.footer__inner-wrapper {
-  margin-bottom: 60px;
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer__inner-wrapper {
+    margin-bottom: 60px;
+  }
 }
 .footer__logo {
-  display: block;
   margin-right: 0;
   margin-bottom: 20px;
   color: #ffffff;
@@ -304,6 +348,16 @@ img {
   gap: 8px;
   font-style: normal;
 }
+@media screen and (max-width: 1199px) {
+  .address {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address {
+    gap: 9px;
+  }
+}
 
 .address__link {
   color: #ffffff;
@@ -324,11 +378,15 @@ img {
   margin-left: 12px;
   fill: currentColor;
 }
+@media screen and (min-width: 1200px) {
+  .sub-form__icon {
+    margin-left: 10px;
+  }
+}
 
 .sub-form__input {
-  width: 100%;
+  min-width: 100%;
   padding: 14px 15px;
-  margin-bottom: 20px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 16px;
@@ -337,6 +395,23 @@ img {
   color: #ffffff;
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+@media screen and (max-width: 1199px) {
+  .sub-form__input {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sub-form__input {
+    min-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sub-form__input {
+    min-width: 358px;
+    margin-right: 12px;
+  }
 }
 .sub-form__input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.6);
