@@ -92,7 +92,6 @@ img {
   display: flex;
   flex-basis: 100%;
   justify-content: space-between;
-  align-items: center;
 }
 @media screen and (max-width: 767px) {
   .header__inner-wrapper {
@@ -103,11 +102,8 @@ img {
   align-items: center;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.header__link--grey {
-  color: #757575;
+  line-height: normal;
+  letter-spacing: 0.28px;
 }
 
 .logo {
@@ -287,8 +283,13 @@ img {
   .footer__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: baseline;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    justify-content: space-between;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -366,6 +367,11 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (min-width: 1200px) {
+  .sub-form__inner-wrapper {
+    display: flex;
+  }
+}
 .sub-form__btn {
   display: inline-flex;
   align-items: center;

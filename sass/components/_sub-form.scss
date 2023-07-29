@@ -1,4 +1,10 @@
 .sub-form {
+  @media screen and (min-width: 1200px) {
+    &__inner-wrapper {
+      display: flex;
+    }
+  }
+
   &__btn {
     display: inline-flex;
     align-items: center;

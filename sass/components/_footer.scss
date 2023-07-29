@@ -11,8 +11,12 @@
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
       align-items: baseline;
+      justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+      justify-content: space-between;
     }
   }
 
