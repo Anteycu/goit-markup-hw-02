@@ -12,6 +12,10 @@
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.6px;
+
+    @media screen and (min-width: 1200px) {
+      line-height: normal;
+    }
   }
 
   &__group {
@@ -20,15 +24,6 @@
 
   &__field:not(:last-child) {
     margin-bottom: 10px;
-  }
-
-  &__input {
-    @extend %input;
-    margin-top: 4px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 11px;
-    padding-left: 41px;
   }
 
   &__btn {
@@ -56,10 +51,13 @@
   padding-left: 41px;
 
   &--textarea {
-    width: 370px;
     padding: 11px 15px;
     margin-top: 4px;
     resize: none;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 12px;
+    }
 
     &::placeholder {
       color: rgba(117, 117, 117, 0.5);

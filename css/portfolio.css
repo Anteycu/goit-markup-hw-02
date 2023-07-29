@@ -159,6 +159,113 @@ img {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
+.nav__list {
+  display: flex;
+}
+.nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav__item {
+  position: relative;
+}
+.nav__link {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #212121;
+}
+.nav__link:active::after {
+  content: " ";
+  position: absolute;
+  top: calc(100% - 3px);
+  left: 0;
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+}
+
+.contacts {
+  display: flex;
+}
+@media screen and (max-width: 1199px) {
+  .contacts {
+    flex-direction: column;
+    align-self: stretch;
+  }
+}
+.contacts__link {
+  color: #757575;
+}
+@media screen and (max-width: 1199px) {
+  .contacts__link {
+    font-size: 12px;
+    letter-spacing: 0.24px;
+  }
+  .contacts__link[href="mailto:info@devstudio.com"] {
+    align-items: end;
+  }
+  .contacts__link[href="tel:+38096111111"] {
+    align-items: start;
+  }
+}
+
+.contacts__item {
+  display: flex;
+  flex: 1;
+}
+@media screen and (max-width: 767px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.contacts__icon {
+  fill: currentColor;
+}
+@media screen and (max-width: 767px) {
+  .contacts__icon {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts__icon {
+    margin-right: 8px;
+  }
+  a[href="mailto:info@devstudio.com"] .contacts__icon {
+    width: 14px;
+    height: 10px;
+  }
+  a[href="tel:+38096111111"] .contacts__icon {
+    width: 10px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icon {
+    margin-right: 10px;
+  }
+  a[href="mailto:info@devstudio.com"] .contacts__icon {
+    width: 16px;
+    height: 12px;
+  }
+  a[href="tel:+38096111111"] .contacts__icon {
+    width: 10px;
+    height: 16px;
+  }
+}
+
 .section {
   padding: 60px 0;
   background-color: #ffffff;
@@ -312,6 +419,30 @@ img {
   text-transform: uppercase;
 }
 
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-style: normal;
+}
+@media screen and (max-width: 1199px) {
+  .address {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address {
+    gap: 9px;
+  }
+}
+
+.address__link {
+  color: #ffffff;
+}
+.address__link--grey {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .socials {
   display: flex;
   justify-content: center;
@@ -341,30 +472,6 @@ img {
 .socials__link--black-bg {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.address {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  font-style: normal;
-}
-@media screen and (max-width: 1199px) {
-  .address {
-    align-items: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .address {
-    gap: 9px;
-  }
-}
-
-.address__link {
-  color: #ffffff;
-}
-.address__link--grey {
-  color: rgba(255, 255, 255, 0.6);
 }
 
 @media screen and (min-width: 1200px) {

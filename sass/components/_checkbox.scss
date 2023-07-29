@@ -1,14 +1,19 @@
-.checkbox-group {
+.checkbox {
   margin-bottom: 30px;
 
   &__field {
     display: flex;
     align-items: center;
-    justify-content: center;
 
-    font-size: 12px;
-    line-height: normal;
-    letter-spacing: 0.36px;
+    @media screen and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: normal;
+      letter-spacing: 0.36px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      justify-content: center;
+    }
   }
 
   &__input {
@@ -30,7 +35,7 @@
   }
 }
 
-.checkbox-group__icon {
+.checkbox__icon {
   width: 16px;
   height: 15px;
   margin-right: 8px;
@@ -38,7 +43,7 @@
   border-radius: 2px;
   fill: $white-primary;
 
-  .checkbox-group__input:checked + & {
+  .checkbox__input:checked + & {
     fill: $accent-color;
     border: none;
   }
