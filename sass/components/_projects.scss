@@ -1,4 +1,10 @@
 .projects {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
   &__thumb {
     position: relative;
     overflow: hidden;
@@ -11,6 +17,12 @@
     padding-right: 23px;
     border: 1px solid $border-color;
     border-top: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
   }
 
   &__title {
@@ -35,8 +47,26 @@
 }
 
 .projects__item {
-  margin-bottom: 30px;
   transition: box-shadow 250ms $time-function;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: calc((100% - 30px * 2) / 3);
+  }
 
   &:hover {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
@@ -63,6 +93,14 @@
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms $time-function;
+
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px 77px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 
   .projects__item:hover & {
     transform: translateY(0);

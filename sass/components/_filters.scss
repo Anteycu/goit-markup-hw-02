@@ -1,13 +1,16 @@
 .filters {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 15px;
   margin-bottom: 40px;
 
-  &__item {
-    display: inline-block;
-    margin-bottom: 15px;
-    margin-right: 4px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
   }
 
-  &__item:nth-child(n + 4) {
-    margin-bottom: 0;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
   }
 }
