@@ -24,13 +24,25 @@
         <a href="/" class="logo link"
           ><span class="logo__text">Web</span>Studio</a
         >
-        <button type="button" class="header__button">
-          <svg width="40" height="40" class="header__icon">
-            <use href=""></use>
-            <use href=""></use>
+        <button
+          type="button"
+          class="header__button is-open"
+          aria-expanded="false"
+          aria-controls="header__inner-wrapper"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="Switcher for mobile menu">
+            <use
+              href="./images/icons-min.svg#icon-menu"
+              class="header__icon-menu"
+            ></use>
+            <use
+              href="./images/icons-min.svg#icon-close"
+              class="header__icon-cross"
+            ></use>
           </svg>
         </button>
-        <div class="header__inner-wrapper">
+        <div class="header__inner-wrapper" id="header__inner-wrapper" data-menu>
           <nav class="nav">
             <ul class="nav__list list">
               <li class="nav__item">
@@ -591,5 +603,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
