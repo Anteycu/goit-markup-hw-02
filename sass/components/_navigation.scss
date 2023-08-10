@@ -10,17 +10,18 @@
   &__item {
     position: relative;
   }
+}
 
-  &__link {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 32px;
-    padding-bottom: 32px;
+.nav__link {
+  display: flex;
+  flex-wrap: wrap;
 
-    color: $text-color-secondary;
-  }
+  color: $text-color-secondary;
 
-  &__link:active::after {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  &:active::after {
     content: ' ';
     position: absolute;
     top: calc(100% - 3px);

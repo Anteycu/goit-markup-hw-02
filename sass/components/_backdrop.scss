@@ -5,12 +5,17 @@
   z-index: 2;
 
   min-width: 100%;
-  min-height: 100%;
+  height: 100%;
 
+  overflow-y: scroll;
   background: rgba(0, 0, 0, 0.2);
   visibility: visible;
   opacity: 1;
   transition: opacity 250ms $time-function, visibility 250ms $time-function;
+
+  @media screen and (max-width: 767px) {
+    padding: 93px 15px;
+  }
 
   &--is-hidden {
     visibility: hidden;

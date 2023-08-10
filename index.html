@@ -21,42 +21,34 @@
   <body>
     <header class="header">
       <div class="container header__wrapper">
-        <a href="/" class="logo link"
-          ><span class="logo__text">Web</span>Studio</a
-        >
+        <a href="/" class="logo"><span class="logo__text">Web</span>Studio</a>
         <button
           type="button"
-          class="header__button is-open"
+          class="menu-button"
           aria-expanded="false"
-          aria-controls="header__inner-wrapper"
-          data-menu-button
+          aria-controls="menu"
+          data-open-menu-button
         >
           <svg width="40" height="40" aria-label="Switcher for mobile menu">
             <use
               href="./images/icons-min.svg#icon-menu"
               class="header__icon-menu"
             ></use>
-            <use
-              href="./images/icons-min.svg#icon-close"
-              class="header__icon-cross"
-            ></use>
           </svg>
         </button>
-        <div class="header__inner-wrapper" id="header__inner-wrapper" data-menu>
+        <div class="header__menu">
           <nav class="nav">
             <ul class="nav__list list">
               <li class="nav__item">
-                <a href="index.html" class="header__link nav__link link"
-                  >Студія</a
-                >
+                <a href="index.html" class="header__link nav__link">Студія</a>
               </li>
               <li class="nav__item">
-                <a href="portfolio.html" class="header__link nav__link link"
+                <a href="portfolio.html" class="header__link nav__link"
                   >Портфоліо</a
                 >
               </li>
               <li class="nav__item">
-                <a href="#" class="header__link nav__link link">Контакти</a>
+                <a href="#" class="header__link nav__link">Контакти</a>
               </li>
             </ul>
           </nav>
@@ -64,7 +56,7 @@
             <li class="contacts__item">
               <a
                 href="mailto:info@devstudio.com"
-                class="header__link contacts__link link"
+                class="header__link contacts__link"
                 ><svg class="contacts__icon">
                   <use href="./images/icons-min.svg#icon-envelope"></use>
                 </svg>
@@ -72,9 +64,7 @@
               >
             </li>
             <li class="contacts__item">
-              <a
-                href="tel:+38096111111"
-                class="header__link contacts__link link"
+              <a href="tel:+38096111111" class="header__link contacts__link"
                 ><svg class="contacts__icon">
                   <use href="./images/icons-min.svg#icon-smartphone"></use>
                 </svg>
@@ -511,6 +501,57 @@
         </form>
       </div>
     </footer>
+    <div class="menu" id="menu" data-menu>
+      <button type="button" class="menu-button" data-close-menu-button>
+        <svg width="40" height="40" aria-label="Switcher for mobile menu">
+          <use
+            href="./images/icons-min.svg#icon-close"
+            class="header__icon-cross"
+          ></use>
+        </svg>
+      </button>
+      <nav class="menu-nav">
+        <ul class="menu-nav__list list">
+          <li class="menu-nav__item">
+            <a href="index.html" class="menu-nav__link">Студія</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="portfolio.html" class="menu-nav__link">Портфоліо</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#" class="menu-nav__link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu__inner-wrapper">
+        <ul class="menu-contacts list">
+          <li class="menu-contacts__item">
+            <a href="tel:+38096111111" class="menu-contacts__link">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="menu-contacts__item">
+            <a href="mailto:info@devstudio.com" class="menu-contacts__link">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-socials list">
+          <li class="menu-socials__item">
+            <a href="#" class="menu-socials__link">Instagram</a>
+          </li>
+          <li class="menu-socials__item">
+            <a href="#" class="menu-socials__link">Twitter</a>
+          </li>
+          <li class="menu-socials__item">
+            <a href="#" class="menu-socials__link">Facebook</a>
+          </li>
+          <li class="menu-socials__item">
+            <a href="#" class="menu-socials__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal">
         <button class="modal__button" type="button" data-modal-close>
