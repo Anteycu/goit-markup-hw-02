@@ -1,12 +1,7 @@
 .socials {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-
-  &__item {
-    display: flex;
-  }
 
   &__icon {
     width: 20px;

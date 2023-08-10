@@ -1,38 +1,58 @@
 .sub-form {
-  &__inner-wrapper {
-    display: flex;
+  @media screen and (min-width: 1200px) {
+    &__inner-wrapper {
+      display: flex;
+    }
   }
 
   &__btn {
     display: inline-flex;
     align-items: center;
-    padding-left: 28px;
+    padding-left: 31px;
     padding-right: 28px;
   }
 
   &__icon {
     width: 24px;
     height: 24px;
-    margin-left: 10px;
+    margin-left: 12px;
     fill: currentColor;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 10px;
+    }
   }
 }
 
 .sub-form__input {
-  min-width: 358px;
-  padding: 15px 16px;
-  margin-right: 12px;
+  min-width: 100%;
+  padding: 14px 15px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
 
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.48px;
   color: $white-primary;
 
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
+  @media screen and (max-width: 1199px) {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
+    margin-right: 12px;
+  }
+
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
-    line-height: 20px;
-    letter-spacing: 0.48px;
   }
 }

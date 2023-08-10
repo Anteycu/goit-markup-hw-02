@@ -2,9 +2,14 @@ body {
   color: $text-color;
 
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: normal;
-  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+
+  &.modal-open,
+  &.menu-open {
+    overflow: hidden;
+  }
 }
 
 img {
@@ -19,10 +24,6 @@ img {
   list-style: none;
 }
 
-.link {
-  text-decoration: none;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -35,7 +36,15 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 480px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }

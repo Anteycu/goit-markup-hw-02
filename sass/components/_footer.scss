@@ -4,13 +4,30 @@
   background-color: $bg-color-secondary;
 
   &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+      justify-content: space-between;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    &__inner-wrapper {
+      margin-bottom: 60px;
+    }
   }
 
   &__logo {
-    display: inline-block;
+    @extend %link;
     margin-right: 0;
     margin-bottom: 20px;
 
@@ -23,9 +40,8 @@
     margin-bottom: 20px;
 
     color: $white-primary;
-    font-size: 14px;
     font-weight: 700;
-    letter-spacing: 0.42px;
+    line-height: normal;
     text-transform: uppercase;
   }
 }

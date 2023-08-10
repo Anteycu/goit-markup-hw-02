@@ -1,15 +1,23 @@
 .address {
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 8px;
+
+  font-style: normal;
+
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 9px;
+  }
 }
 
 .address__link {
-  color: $white-primary;
+  @extend %link;
 
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  color: $white-primary;
 
   &--grey {
     color: rgba(255, 255, 255, 0.6);
