@@ -1,5 +1,6 @@
 .header {
   background-color: $white-primary;
+  border-bottom: 1px solid $border-color-secondary;
 
   &__wrapper {
     display: flex;
