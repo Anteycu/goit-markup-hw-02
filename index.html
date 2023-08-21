@@ -144,28 +144,40 @@
           <ul class="activities list">
             <li class="activities__item">
               <img
-                width="370"
-                height="294"
-                src="./images/img_1.jpg"
+                srcset="
+                  ./images/desktop-images-min/activity1-370.jpg    370w,
+                  ./images/desktop-images-min/activity1-370@2x.jpg 740w
+                "
+                sizes="370px"
+                src="./images/desktop-images-min/activity1-370.jpg"
                 alt="Робочій стіл з папірцями, моніторами та ремоут клавітура за якою працюють."
+                loading="lazy"
               />
               <p class="activities__description">Десктопні додатки</p>
             </li>
             <li class="activities__item">
               <img
-                width="370"
-                height="294"
-                src="./images/img_2.jpg"
+                srcset="
+                  ./images/desktop-images-min/activity2-370.jpg    370w,
+                  ./images/desktop-images-min/activity2-370@2x.jpg 740w
+                "
+                sizes="370px"
+                src="./images/desktop-images-min/activity2-370.jpg"
                 alt="Людина працює за ноутбуком, з телефоном у руці."
+                loading="lazy"
               />
               <p class="activities__description">Мобільні додатки</p>
             </li>
             <li class="activities__item">
               <img
-                width="370"
-                height="294"
-                src="./images/img_3.jpg"
+                srcset="
+                  ./images/desktop-images-min/activity3-370.jpg    370w,
+                  ./images/desktop-images-min/activity3-370@2x.jpg 740w
+                "
+                sizes="370px"
+                src="./images/desktop-images-min/activity3-370.jpg"
                 alt="Планшет у руках, з палітрою на екрані."
+                loading="lazy"
               />
               <p class="activities__description">Дизайнерські рішення</p>
             </li>
@@ -177,13 +189,67 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="workers list">
             <li class="workers__item">
-              <img
-                width="270"
-                height="260"
-                src="./images/img.jpg"
-                alt="Молодий чорнявий чоловік в окулярах та короткою бородою у темно-червоній сорочці."
-                class="workers__picture"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile-images-min/team1-450.webp    450w,
+                    ./images/mobile-images-min/team1-450@2x.webp 900w
+                  "
+                  media="(max-width: 480px)"
+                  sizes="450px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile-images-min/team1-450.jpg    450w,
+                    ./images/mobile-images-min/team1-450@2x.jpg 900w
+                  "
+                  media="(max-width: 480px)"
+                  sizes="450px"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-images-min/team1-354.jpg    354w,
+                    ./images/tablet-images-min/team1-354@2x.jpg 708w
+                  "
+                  media="(min-width: 481px) and (max-width: 768px)"
+                  sizes="354px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-images-min/team1-354.jpg    354w,
+                    ./images/tablet-images-min/team1-354@2x.jpg 708w
+                  "
+                  media="(min-width: 481px) and (max-width: 768px)"
+                  sizes="354px"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/desktop-images-min/team1-270.jpg    270w,
+                    ./images/desktop-images-min/team1-270@2x.jpg 540w
+                  "
+                  media="(min-width: 769px)"
+                  sizes="270px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop-images-min/team1-270.jpg    270w,
+                    ./images/desktop-images-min/team1-270@2x.jpg 540w
+                  "
+                  media="(min-width: 769px)"
+                  sizes="270px"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/mobile-images-min/team1-450.jpg"
+                  alt="Молодий чорнявий чоловік в окулярах та короткою бородою у темно-червоній сорочці."
+                  class="workers__picture"
+                />
+              </picture>
               <h3 class="workers__title">Ігор Дем'яненко</h3>
               <p class="workers__description">Product Designer</p>
               <ul class="socials list">
@@ -222,13 +288,67 @@
               </ul>
             </li>
             <li class="workers__item">
-              <img
-                width="270"
-                height="260"
-                src="./images/img-1.jpg"
-                alt="Молода білява дівчина в окулярах та чорному піджаку."
-                class="workers__picture"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile-images-min/team2-450.webp    450w,
+                    ./images/mobile-images-min/team2-450@2x.webp 900w
+                  "
+                  media="(max-width: 480px)"
+                  sizes="450px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile-images-min/team2-450.jpg    450w,
+                    ./images/mobile-images-min/team2-450@2x.jpg 900w
+                  "
+                  media="(max-width: 480px)"
+                  sizes="450px"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-images-min/team2-354.jpg    354w,
+                    ./images/tablet-images-min/team2-354@2x.jpg 708w
+                  "
+                  media="(min-width: 481px) and (max-width: 768px)"
+                  sizes="354px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-images-min/team2-354.jpg    354w,
+                    ./images/tablet-images-min/team2-354@2x.jpg 708w
+                  "
+                  media="(min-width: 481px) and (max-width: 768px)"
+                  sizes="354px"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/desktop-images-min/team2-270.jpg    270w,
+                    ./images/desktop-images-min/team2-270@2x.jpg 540w
+                  "
+                  media="(min-width: 769px)"
+                  sizes="270px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop-images-min/team2-270.jpg    270w,
+                    ./images/desktop-images-min/team2-270@2x.jpg 540w
+                  "
+                  media="(min-width: 769px)"
+                  sizes="270px"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/mobile-images-min/team2-450.jpg"
+                  alt="Молодa світловолоса дівчина в  костюмі."
+                  class="workers__picture"
+                />
+              </picture>
               <h3 class="workers__title">Ольга Рєпіна</h3>
               <p class="workers__description">Frontend Developer</p>
               <ul class="socials list">
@@ -267,13 +387,67 @@
               </ul>
             </li>
             <li class="workers__item">
-              <img
-                width="270"
-                height="260"
-                src="./images/img-2.jpg"
-                alt="Молодий чорнявий чоловік з щетиною у білій сорочці."
-                class="workers__picture"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile-images-min/team3-450.webp    450w,
+                    ./images/mobile-images-min/team3-450@2x.webp 900w
+                  "
+                  media="(max-width: 480px)"
+                  sizes="450px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile-images-min/team3-450.jpg    450w,
+                    ./images/mobile-images-min/team3-450@2x.jpg 900w
+                  "
+                  media="(max-width: 480px)"
+                  sizes="450px"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-images-min/team3-354.jpg    354w,
+                    ./images/tablet-images-min/team3-354@2x.jpg 708w
+                  "
+                  media="(min-width: 481px) and (max-width: 768px)"
+                  sizes="354px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-images-min/team3-354.jpg    354w,
+                    ./images/tablet-images-min/team3-354@2x.jpg 708w
+                  "
+                  media="(min-width: 481px) and (max-width: 768px)"
+                  sizes="354px"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/desktop-images-min/team3-270.jpg    270w,
+                    ./images/desktop-images-min/team3-270@2x.jpg 540w
+                  "
+                  media="(min-width: 769px)"
+                  sizes="270px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop-images-min/team3-270.jpg    270w,
+                    ./images/desktop-images-min/team3-270@2x.jpg 540w
+                  "
+                  media="(min-width: 769px)"
+                  sizes="270px"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/mobile-images-min/team3-450.jpg"
+                  alt="Молодий чорнявий чоловік у світлій сорочці."
+                  class="workers__picture"
+                />
+              </picture>
               <h3 class="workers__title">Микола Тарасов</h3>
               <p class="workers__description">Marketing</p>
               <ul class="socials list">
@@ -312,13 +486,67 @@
               </ul>
             </li>
             <li class="workers__item">
-              <img
-                width="270"
-                height="260"
-                src="./images/img-3.jpg"
-                alt="Молодий чорнявий чоловік з короткою бородою у чорній футболці."
-                class="workers__picture"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile-images-min/team4-450.webp    450w,
+                    ./images/mobile-images-min/team4-450@2x.webp 900w
+                  "
+                  media="(max-width: 480px)"
+                  sizes="450px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile-images-min/team4-450.jpg    450w,
+                    ./images/mobile-images-min/team4-450@2x.jpg 900w
+                  "
+                  media="(max-width: 480px)"
+                  sizes="450px"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-images-min/team4-354.jpg    354w,
+                    ./images/tablet-images-min/team4-354@2x.jpg 708w
+                  "
+                  media="(min-width: 481px) and (max-width: 768px)"
+                  sizes="354px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-images-min/team4-354.jpg    354w,
+                    ./images/tablet-images-min/team4-354@2x.jpg 708w
+                  "
+                  media="(min-width: 481px) and (max-width: 768px)"
+                  sizes="354px"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/desktop-images-min/team4-270.jpg    270w,
+                    ./images/desktop-images-min/team4-270@2x.jpg 540w
+                  "
+                  media="(min-width: 769px)"
+                  sizes="270px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop-images-min/team4-270.jpg    270w,
+                    ./images/desktop-images-min/team4-270@2x.jpg 540w
+                  "
+                  media="(min-width: 769px)"
+                  sizes="270px"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/mobile-images-min/team4-450.jpg"
+                  alt="Молодий чорнявий чоловік в окулярах та короткою бородою у чорній футболці."
+                  class="workers__picture"
+                />
+              </picture>
               <h3 class="workers__title">Михайло Єрмаков</h3>
               <p class="workers__description">UI Designer</p>
               <ul class="socials list">
